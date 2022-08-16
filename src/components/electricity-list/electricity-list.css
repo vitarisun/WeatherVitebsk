@@ -1,0 +1,7 @@
+.app-list {
+  margin-top: 10px;
+  /* background-color: linear-gradient(to top, #407ebe,#336598); */
+  border-radius: 25px;
+  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.15);
+  /* color: #fff; */
+}
