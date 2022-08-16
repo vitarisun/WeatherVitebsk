@@ -5,38 +5,29 @@ const WarmInfo = () => {
       <table className="table table-bordered table-condenset">
         <tbody>
           <tr>
-            <td rowspan="2">№</td>
-            <td rowspan="2">Объект</td>
-            <td rowspan="2">Адрес объекта </td>
-            <td rowspan="2">Вид нагрузки (отопление, отопление и ГВС, ГВС)</td>
-            <td rowspan="2">Регистрационный номер счетчик</td>
-            <td rowspan="2">Место установки прибора</td>
-            <td colspan="3">Показания прибора</td>
-            <td rowspan="2">Коэффи-циент пересчета</td>
-            <td rowspan="2">Кол-во тепловой энергии в Гкал</td>
-            <td rowspan="2">Кол-во дней работы прибора</td>
+            <th rowspan="2">№</th>
+            <th rowspan="2">Объект</th>
+            <th rowspan="2">Адрес объекта </th>
+            <th rowspan="2">Вид нагрузки (отопление, отопление и ГВС, ГВС)</th>
+            <th rowspan="2">Регистрационный номер счетчик</th>
+            <th rowspan="2">Место установки прибора</th>
+            <th colspan="3">Показания прибора</th>
+            <th rowspan="2">Коэффи-циент пересчета</th>
+            <th rowspan="2">Кол-во тепловой энергии в Гкал</th>
+            <th rowspan="2">Кол-во дней работы прибора</th>
           </tr>
           <tr>
-            <td>На конец месяца</td>
-            <td>На начало месяца</td>
-            <td>Разность</td>
+            <th>На конец месяца</th>
+            <th>На начало месяца</th>
+            <th>Разность</th>
           </tr>
           <tr>
-            <td rowspan="2">1</td>
+            <th rowspan="2">1</th>
             <td rowspan="2"></td>
             <td rowspan="2"></td>
             <td rowspan="2"></td>
             <td rowspan="2"></td>
-            <td>На подающем трубопроводе</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Таймер</td>
+            <th>На подающем трубопроводе</th>
             <td></td>
             <td></td>
             <td></td>
@@ -45,7 +36,16 @@ const WarmInfo = () => {
             <td></td>
           </tr>
           <tr>
-            <td colspan="10">ИТОГО</td>
+            <th>По таймеру</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th colspan="10">ИТОГО</th>
             <td></td>
             <td></td>
           </tr>
