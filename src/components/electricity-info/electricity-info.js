@@ -1,4 +1,14 @@
-const ElectricityInfo = () => {
+const ElectricityInfo = ({
+  elemIndex,
+  branch,
+  typeCounter,
+  numberCounter,
+  startCounter,
+  endCounter,
+  transformer,
+  coefficient,
+  electroResult,
+}) => {
   return (
     <div>
       <h5 className="text-center">Электроэнергия</h5>
@@ -16,52 +26,18 @@ const ElectricityInfo = () => {
             <th>Потребление, кВт/ч</th>
           </tr>
         </thead>
+
         <tbody>
           <tr>
-            <th scope="row">1</th>
-            <td>Административное помещение филиала «Витебскоблгидромет»</td>
-            <td>СС-301-10.1/U/1/P(L)K</td>
-            <td>16066232</td>
-            <td>193001</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>ДМРЛ (аэропорт «Витебск»), Ввод № 1</td>
-            <td>СС-301-5.1/U</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Гидрологический пост Добригоры</td>
-            <td>СС-101-120S</td> {/* марка счетчика */}
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          {/* <tr>
-      <th scope="row">4</th>
-      <td colspan="2">Larry the Bird</td>
-      <td></td>
-    </tr> */}
-          <tr>
-            <th scope="row">4</th>
-            <td>Гидрологический пост Витебск</td>
-            <td>СС-101-120B</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <th scope="row">{elemIndex + 1}</th>
+            <td>{branch}</td> {/* Наименование объекта */}
+            <td>{typeCounter}</td> {/* Тип счетчика */}
+            <td>{numberCounter}</td> {/* номер счетчика */}
+            <td>{startCounter}</td> {/* начальные показания */}
+            <td>{endCounter}</td> {/* конечные показания */}
+            <td>{transformer}</td> {/* Тр-ры тока */}
+            <td>{coefficient}</td> {/* Расчет. коэф */}
+            <td>{electroResult}</td> {/* Потребление, кВт/ч */}
           </tr>
         </tbody>
       </table>

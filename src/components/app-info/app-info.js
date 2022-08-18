@@ -17,10 +17,18 @@ const AppInfo = () => {
             <option value="3">МС Орша</option>
           </select>
           <label>Начало</label>
-          <input type="date" className="form-control new-post-label"></input>
+          <input
+            type="date"
+            id="start-date"
+            className="form-control new-post-label"
+          ></input>
 
           <label>Окончание</label>
-          <input type="date" className="form-control new-post-label"></input>
+          <input
+            type="date"
+            id="end-date"
+            className="form-control new-post-label"
+          ></input>
 
           <button type="submit" className="btn btn-outline-light">
             Добавить

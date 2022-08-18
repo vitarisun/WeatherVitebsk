@@ -20,21 +20,6 @@ const BriqnetteFirewoodInfo = () => {
             <td>0.1</td> {/* Торфо-брикет */}
             <td>0.8</td>
           </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th scope="row">4</th>
-            <td></td>
-            <td></td>
-          </tr>
         </tbody>
       </table>
     </div>
