@@ -81,8 +81,6 @@ function App() {
     },
   ];
 
-  console.log(dataElectro[1]);
-
   return (
     <div className="app">
       <AppInfo />

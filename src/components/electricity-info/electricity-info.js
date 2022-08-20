@@ -1,3 +1,5 @@
+// import ElectricityItem from '../electricity-item/electricity-item';
+
 const ElectricityInfo = ({
   elemIndex,
   branch,
@@ -12,7 +14,7 @@ const ElectricityInfo = ({
   return (
     <div>
       <h5 className="text-center">Электроэнергия</h5>
-      <table class="table table-bordered table-condenset">
+      <table className="table table-bordered table-condenset">
         <thead>
           <tr>
             <th>№</th>
@@ -26,10 +28,9 @@ const ElectricityInfo = ({
             <th>Потребление, кВт/ч</th>
           </tr>
         </thead>
-
         <tbody>
           <tr>
-            <th scope="row">{elemIndex + 1}</th>
+            <th scope="row">{elemIndex + 1}</th> {/* Порядковый */}
             <td>{branch}</td> {/* Наименование объекта */}
             <td>{typeCounter}</td> {/* Тип счетчика */}
             <td>{numberCounter}</td> {/* номер счетчика */}
