@@ -3,6 +3,7 @@
 const ElectricityInfo = ({
   elemIndex,
   branch,
+  treatyElectro,
   typeCounter,
   numberCounter,
   startCounter,
@@ -19,6 +20,7 @@ const ElectricityInfo = ({
           <tr>
             <th>№</th>
             <th>Наименование объекта</th>
+            <th>Договор</th>
             <th>Тип счетчика</th>
             <th>№ счетчика</th>
             <th>Начальные показания</th>
@@ -32,6 +34,7 @@ const ElectricityInfo = ({
           <tr>
             <th scope="row">{elemIndex + 1}</th> {/* Порядковый */}
             <td>{branch}</td> {/* Наименование объекта */}
+            <td>{treatyElectro}</td> {/* Договор на электроснабжение */}
             <td>{typeCounter}</td> {/* Тип счетчика */}
             <td>{numberCounter}</td> {/* номер счетчика */}
             <td>{startCounter}</td> {/* начальные показания */}
@@ -46,4 +49,4 @@ const ElectricityInfo = ({
   );
 };
 
-export default ElectricityInfo;
+// export default ElectricityInfo;
