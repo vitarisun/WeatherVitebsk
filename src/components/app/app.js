@@ -57,43 +57,46 @@ import './app.css';
 // }
 
 function App() {
-  // const dataElectro = [
-  //   {
-  //     branch: 'Административное помещение филиала «Витебскоблгидромет»',
-  //     treatyElectro: '01-550',
-  //     typeCounter: 'СС-301-10.1/U/1/P(L)K',
-  //     numberCounter: 16066232,
-  //     startCounter: 193001,
-  //     endCounter: 193030,
-  //     transformer: '0',
-  //     coefficient: 1,
-  //     electroResult: 29,
-  //     id: 1,
-  //   },
-  //   {
-  //     branch: 'ДМРЛ (аэропорт «Витебск»), Ввод № 1',
-  //     treatyElectro: '01-550',
-  //     typeCounter: 'СС-301-5.1/U',
-  //     numberCounter: 18087619,
-  //     startCounter: 3277.52,
-  //     endCounter: 3363.4,
-  //     transformer: '150/5',
-  //     coefficient: 30,
-  //     electroResult: 2576,
-  //     id: 2,
-  //   },
-  // ];
-
-  const dataWarm = [
+  const dataElectro = [
     {
+      i: 1,
       branch: 'Административное помещение филиала «Витебскоблгидромет»',
-      treatyWarm: '01-213-573',
-      numberCounter: 6608,
-      supplySipeline: 55.43,
-      byЕimer: 44.92,
+      treatyElectro: '01-550',
+      typeCounter: 'СС-301-10.1/U/1/P(L)K',
+      numberCounter: 16066232,
+      startCounter: 193001,
+      endCounter: 193030,
+      transformer: '0',
+      coefficient: 1,
+      electroResult: 29,
       id: 1,
     },
+    {
+      i: 2,
+      branch: 'ДМРЛ (аэропорт «Витебск»), Ввод № 1',
+      treatyElectro: '01-550',
+      typeCounter: 'СС-301-5.1/U',
+      numberCounter: 18087619,
+      startCounter: 3277.52,
+      endCounter: 3363.4,
+      transformer: '150/5',
+      coefficient: 30,
+      electroResult: 2576,
+      id: 2,
+    },
   ];
+
+  // const dataWarm = [
+  //   {
+  //     i: 1,
+  //     branch: 'Административное помещение филиала «Витебскоблгидромет»',
+  //     treatyWarm: '01-213-573',
+  //     numberCounter: 6608,
+  //     supplySipeline: 55.43,
+  //     byЕimer: 44.92,
+  //     id: 1,
+  //   },
+  // ];
 
   return (
     <div className="app">
@@ -104,11 +107,12 @@ function App() {
       <div>
         <EnergyResources onClick={() => this.onResources} />
       </div>
-      {/* <ElectricityList data={dataElectro} /> */}
-      <ElectricityList />
+      <ElectricityList data={dataElectro} />
+      {/* <ElectricityList /> */}
       <WarmInfo />
       <GasInfo />
-      <WaterInfo data={dataWarm} />
+      {/* <WaterInfo data={dataWarm} /> */}
+      <WaterInfo />
       <BriqnetteFirewoodInfo />
       <div>
         <ElectroAddForm />

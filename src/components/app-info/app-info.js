@@ -10,7 +10,7 @@ const AppInfo = () => {
       <h5 className="header">Выберите подраздиление и отчетный период</h5>
       <div>
         <form className="add-form d-flex">
-          <select className="form-select">
+          <select className="form-select" defaultValue="ОГЭ">
             <option selected>Выберите подразделение</option>
             <option value="1">ОГЭ</option>
             <option value="2">МС Витебск</option>

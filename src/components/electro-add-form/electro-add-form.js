@@ -5,14 +5,14 @@ const ElectroAddForm = () => {
     <div className="app-add-form">
       <h4>Добавление нового счетчика</h4>
       <form className="add-form d-flex">
-        <select className="form-select">
+        <select className="form-select" defaultValue="Один">
           <option selected>Выберите объект</option>
           <option value="1">Один</option>
           <option value="2">Два</option>
           <option value="3">Три</option>
         </select>
 
-        <select className="form-select">
+        <select className="form-select" defaultValue="Электросчетчик">
           <option selected>Выберите тип счетчика</option>
           <option value="1">Электросчетчик</option>
           <option value="2">Теплосчетчик</option>

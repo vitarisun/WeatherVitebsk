@@ -2,7 +2,7 @@ const ElectricityListItem = (props) => {
   return (
     <tbody>
       <tr>
-        <th scope="row">{props.i + 1}</th> {/* Порядковый */}
+        <th scope="row">{props.i}</th> {/* Порядковый */}
         <td>{props.branch}</td> {/* Наименование объекта */}
         <td>{props.treatyElectro}</td> {/* Договор на электроснабжение */}
         <td>{props.typeCounter}</td> {/* Тип счетчика */}
