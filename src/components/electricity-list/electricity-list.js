@@ -3,10 +3,10 @@ import ElectricityListItem from '../electricity-list-item/electricity-list-item'
 import './electricity-list.css';
 
 const ElectricityList = ({ data }) => {
-  const elemElectricity = data.map((i, item) => {
+  const elemElectricity = data.map((item) => {
     const { id, ...itemProps } = item;
 
-    return <ElectricityListItem key={id} {...i} {...itemProps} />;
+    return <ElectricityListItem key={id} {...itemProps} />;
   });
 
   return (
