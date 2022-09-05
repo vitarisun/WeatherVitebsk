@@ -10,28 +10,30 @@ const ElectricityList = ({ data }) => {
   });
 
   return (
-    <ul className="app-list list-group">
-      <div>
-        <h5 className="text-center">Электроэнергия</h5>
-        <table className="table table-bordered table-condenset">
-          <thead>
-            <tr>
-              <th>№</th>
-              <th>Наименование объекта</th>
-              <th>Договор</th>
-              <th>Тип счетчика</th>
-              <th>№ счетчика</th>
-              <th>Начальные показания</th>
-              <th>Конечные показания</th>
-              <th>Тр-ры тока</th>
-              <th>Расчет. коэф.</th>
-              <th>Потребление, кВт/ч</th>
-            </tr>
-          </thead>
-          {elemElectricity}
-        </table>
-      </div>
-    </ul>
+    <>
+      <ul className="app-list list-group">
+        <div>
+          <h5 className="text-center">Электроэнергия</h5>
+          <table className="table table-bordered table-condenset">
+            <thead>
+              <tr>
+                <th>№</th>
+                <th>Наименование объекта</th>
+                <th>Договор</th>
+                <th>Тип счетчика</th>
+                <th>№ счетчика</th>
+                <th>Начальные показания</th>
+                <th>Конечные показания</th>
+                <th>Тр-ры тока</th>
+                <th>Расчет. коэф.</th>
+                <th>Потребление, кВт/ч</th>
+              </tr>
+            </thead>
+            {elemElectricity}
+          </table>
+        </div>
+      </ul>
+    </>
   );
 };
 

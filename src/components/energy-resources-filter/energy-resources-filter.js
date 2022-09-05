@@ -3,20 +3,29 @@ import { Component } from 'react';
 import './energy-resources-filter.css';
 
 class EnergyResourcesFilter extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      resources: false,
-    };
-  }
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     resources: false,
+  //   };
+  // }
 
-  onResources = () => {
-    this.setState(({ resources }) => ({
-      resources: !resources,
-    }));
-  };
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     name: 'resources',
+  //   };
+  // }
+
+  // onResources = () => {
+  //   this.setState(({ resources }) => ({
+  //     resources: !resources,
+  //   }));
+  // };
 
   render() {
+    const { onResources } = this.props;
+
     return (
       <div className="btn-group">
         <button className="btn btn-outline-light" type="button">
@@ -46,10 +55,11 @@ class EnergyResourcesFilter extends Component {
           Объемы отпуска ТЭР
         </button>
 
+        {/* <button className="btn btn-outline-light" type="button"> */}
         <button
           className="btn btn-outline-light"
           type="button"
-          onClick={this.onResources}
+          onClick={onResources}
         >
           Отчеты
         </button>

@@ -1,6 +1,6 @@
 const WaterInfo = () => {
   return (
-    <div>
+    <>
       <h5 className="text-center">Потебление воды</h5>
       <table className="table table-bordered table-condenset">
         <thead>
@@ -31,7 +31,7 @@ const WaterInfo = () => {
           </tr>
         </tbody>
       </table>
-    </div>
+    </>
   );
 };
 

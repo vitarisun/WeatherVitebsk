@@ -1,6 +1,6 @@
 const WarmInfo = () => {
   return (
-    <div>
+    <>
       <h5 className="text-center">Потебление тепловой энергии</h5>
       <table className="table table-bordered table-condenset">
         <tbody>
@@ -51,7 +51,7 @@ const WarmInfo = () => {
           </tr>
         </tbody>
       </table>
-    </div>
+    </>
   );
 };
 
