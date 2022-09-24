@@ -2,7 +2,7 @@ import { Component } from 'react';
 
 import AppInfo from '../app-info/app-info';
 import EnergyResourcesFilter from '../energy-resources-filter/energy-resources-filter';
-import EnergyResources from '../energy-resources/energy-resources';
+// import EnergyResources from '../energy-resources/energy-resources';
 import ElectricityList from '../electricity-list/electricity-list';
 import ElectroAddForm from '../electro-add-form/electro-add-form';
 import WarmInfo from '../warm-info/warm-info';
@@ -59,26 +59,6 @@ import './app.css';
 // }
 
 class App extends Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     name: 'resources',
-  //     onShowHideResources: false,
-  //   };
-
-  //   // this.hideComponent = this.hideComponent.bind(this);
-  // }
-
-  // hideComponent(name) {
-  //   switch (name) {
-  //     case 'onShowHideResources':
-  //       this.setState({ onShowHideResources: !this.state.onShowHideResources });
-  //       break;
-  //     default:
-  //     // null;
-  //   }
-  // }
-
   constructor(props) {
     super(props);
     this.state = {
@@ -110,73 +90,17 @@ class App extends Component {
           id: 2,
         },
       ],
-      name: 'resources',
-      ShowHideComponent: false,
     };
-
-    // this.hideComponent = this.hideComponent.bind(this);
   }
 
-  // hideComponent = (onResources) => {
-  //   if (onResources) {
-  //     console.log('onResources');
-  //   }
-  // };
-
-  // hideComponent = (onResources) => {
-
-  //   }
-  // };
-
-  // constructor() {
-  //   super();
-  //   this.state = {
-  //     name: 'resources',
-  //     onResources: false,
-  //   };
-  //   // this.hideComponent = this.hideComponent.bind(this);
-  // }
-
-  hideComponent = (onResources) => {
-    this.setState(({ onResources }) => ({
-      onResources: !onResources,
-    }));
-
-    // this.setState(({ onResources }) => ({
-    //   onResources: !onResources,
-    // }));
-    // if (onResources) {
-    // }
-    // console.log({ onResources });
-    // };
-  };
-  // };
-
   render() {
-    // const dataWarm = [
-    //   {
-    //     i: 1,
-    //     branch: 'Административное помещение филиала «Витебскоблгидромет»',
-    //     treatyWarm: '01-213-573',
-    //     numberCounter: 6608,
-    //     supplySipeline: 55.43,
-    //     byЕimer: 44.92,
-    //     id: 1,
-    //   },
-    // ];
-
     return (
       <div className="app">
         <AppInfo />
         <div>
-          {/* <EnergyResourcesFilter onResources={this.hideComponent} /> */}
-          <EnergyResourcesFilter onClick={this.hideComponent} />
+          <EnergyResourcesFilter />
         </div>
-        <div>
-          {/* {menuEnergyResources} */}
-          <EnergyResources resources={this.setState.hideComponent} />
-          {/* <EnergyResources /> */}
-        </div>
+        <div></div>
         <ElectricityList data={this.state.dataElectro} />
         {/* <ElectricityList /> */}
         <WarmInfo />
