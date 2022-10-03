@@ -9,29 +9,11 @@ class EnergyResourcesFilter extends Component {
     this.state = {
       werV: false,
       resources: false,
-
-      // dataButtons: [
-
-      //   {energRes: electro, stateEnergRes: false},
-      //   {energRes:warm, stateEnergRes: false},
-      //   {energRes:gas, stateEnergRes: false},
-      //   {energRes:firewood, stateEnergRes: false},
-      //   {energRes:briqutte, stateEnergRes: false},
-      //   {energRes:water, stateEnergRes: false},
-      //   {energRes:werV, stateEnergRes: false},
-      //   {energRes:resources, stateEnergRes: false},
-      // ]
     };
 
     this.onResources = this.onResources.bind(this);
     this.onwerV = this.onwerV.bind(this);
   }
-
-  // const onResources = dataButtons.map(({energRes, }) => {
-  //       this.setState(({ energRes }) => ({
-  //     energRes: !energRes,
-  //   }));
-  // })
 
   onResources = () => {
     this.setState(({ resources }) => ({
@@ -58,44 +40,24 @@ class EnergyResourcesFilter extends Component {
       { name: 'Firewood', label: 'Дрова' },
       { name: 'Briqutte', label: 'Торфобрикет' },
       { name: 'Water', label: 'Вода' },
-      { name: 'WerV', label: 'Объемы отпуска ТЭР' },
-      { name: 'Resources', label: 'Отчеты' },
+      { name: 'WerV', label: 'Объемы отпуска ТЭР', click: this.onwerV },
+      { name: 'Resources', label: 'Отчеты', click: this.onResources },
     ];
 
-    const buttons = buttonsEnergyResourcesFilter.map(({ name, label }) => {
-      // let click = this.props;
-      // if (name === 'Resources') {
-      //   click = this.onResource;
-      // } else {
-      //   click = false;
-      // }
-      function click(e) {
-        e.preventDefault();
-
-        if (name === 'Resources') {
-          console.log(name);
-        }
-        if (name === 'WerV') {
-          console.log(name);
-        }
-        //
-
-        // if (name === 'Resources') {
-        //  oClick = this.onResource
-        // }
+    const buttons = buttonsEnergyResourcesFilter.map(
+      ({ name, label, click }) => {
+        return (
+          <button
+            className="btn btn-outline-light"
+            type="button"
+            key={name}
+            onClick={click}
+          >
+            {label}
+          </button>
+        );
       }
-
-      return (
-        <button
-          className="btn btn-outline-light"
-          type="button"
-          key={name}
-          onClick={click}
-        >
-          {label}
-        </button>
-      );
-    });
+    );
 
     return (
       <div>

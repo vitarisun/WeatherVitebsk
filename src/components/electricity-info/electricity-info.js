@@ -32,16 +32,16 @@ const ElectricityInfo = ({
         </thead>
         <tbody>
           <tr>
-            <th scope="row">{elemIndex + 1}</th> {/* Порядковый */}
-            <td>{branch}</td> {/* Наименование объекта */}
-            <td>{treatyElectro}</td> {/* Договор на электроснабжение */}
-            <td>{typeCounter}</td> {/* Тип счетчика */}
-            <td>{numberCounter}</td> {/* номер счетчика */}
-            <td>{startCounter}</td> {/* начальные показания */}
-            <td>{endCounter}</td> {/* конечные показания */}
-            <td>{transformer}</td> {/* Тр-ры тока */}
-            <td>{coefficient}</td> {/* Расчет. коэф */}
-            <td>{electroResult}</td> {/* Потребление, кВт/ч */}
+            <th scope="row">{elemIndex + 1}</th>
+            <td>{branch}</td>
+            <td>{treatyElectro}</td>
+            <td>{typeCounter}</td>
+            <td>{numberCounter}</td>
+            <td>{startCounter}</td>
+            <td>{endCounter}</td>
+            <td>{transformer}</td>
+            <td>{coefficient}</td>
+            <td>{electroResult}</td>
           </tr>
         </tbody>
       </table>
@@ -49,4 +49,4 @@ const ElectricityInfo = ({
   );
 };
 
-// export default ElectricityInfo;
+export default ElectricityInfo;
