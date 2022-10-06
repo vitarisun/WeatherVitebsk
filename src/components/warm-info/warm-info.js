@@ -7,7 +7,7 @@ const WarmInfo = () => {
           <tr>
             <th rowSpan="2">№</th>
             <th rowSpan="2">Объект</th>
-            <th rowSpan="2">Адрес объекта </th>
+            <th rowSpan="2">Адрес объекта</th>
             <th rowSpan="2">Вид нагрузки (отопление, отопление и ГВС, ГВС)</th>
             <th rowSpan="2">Регистрационный номер счетчик</th>
             <th rowSpan="2">Место установки прибора</th>

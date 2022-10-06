@@ -7,23 +7,24 @@ class EnergyResourcesFilter extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      electro: false,
       werV: false,
       resources: false,
     };
 
-    this.onResources = this.onResources.bind(this);
     this.onwerV = this.onwerV.bind(this);
+    this.onResources = this.onResources.bind(this);
   }
-
-  onResources = () => {
-    this.setState(({ resources }) => ({
-      resources: !resources,
-    }));
-  };
 
   onwerV = () => {
     this.setState(({ werV }) => ({
       werV: !werV,
+    }));
+  };
+
+  onResources = () => {
+    this.setState(({ resources }) => ({
+      resources: !resources,
     }));
   };
 
@@ -34,7 +35,7 @@ class EnergyResourcesFilter extends Component {
     }
 
     const buttonsEnergyResourcesFilter = [
-      { name: 'Eectro', label: 'Электоэнергия' },
+      { name: 'Eectro', label: 'Электоэнергия', click: this.electro },
       { name: 'Warm', label: 'Теплоэнергия' },
       { name: 'Gas', label: 'Газ' },
       { name: 'Firewood', label: 'Дрова' },
@@ -61,52 +62,7 @@ class EnergyResourcesFilter extends Component {
 
     return (
       <div>
-        <div className="btn-group">
-          {buttons}
-          {/* <button className="btn btn-outline-light" type="button" name="Eectro">
-            Электоэнергия
-          </button>
-
-          <button className="btn btn-outline-light" type="button" name="Warm">
-            Теплоэнергия
-          </button>
-
-          <button className="btn btn-outline-light" type="button" name="Gas">
-            Газ
-          </button>
-
-          <button
-            className="btn btn-outline-light"
-            type="button"
-            name="Firewood"
-          >
-            Дрова
-          </button>
-
-          <button
-            className="btn btn-outline-light"
-            type="button"
-            name="Briqutte"
-          >
-            Торфобрикет
-          </button>
-
-          <button className="btn btn-outline-light" type="button" name="Water">
-            Вода
-          </button>
-          <button className="btn btn-outline-light" type="button" name="WerV">
-            Объемы отпуска ТЭР
-          </button> */}
-          {/* <button
-            className="btn btn-outline-light"
-            type="button"
-            name="Resources"
-            onClick={this.onResources}
-          >
-            Отчеты
-          </button> */}
-        </div>
-
+        <div className="btn-group">{buttons}</div>
         <div>{menuEnergyResources}</div>
       </div>
     );

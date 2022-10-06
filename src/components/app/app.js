@@ -90,10 +90,24 @@ class App extends Component {
           id: 2,
         },
       ],
+
+      // electro: false,
     };
+    // this.electro = this.electro.bind(this);
   }
 
+  // onElectro = () => {
+  //   this.setState(({ electro }) => ({
+  //     electro: !electro,
+  //   }));
+  // };
+
   render() {
+    // let menuElectro = null;
+    // if (this.state.electro) {
+    //   menuElectro = <ElectricityList data={this.state.dataElectro} />;
+    // }
+
     return (
       <div className="app">
         <AppInfo />
@@ -102,7 +116,7 @@ class App extends Component {
         </div>
         <div></div>
         <ElectricityList data={this.state.dataElectro} />
-        {/* <ElectricityList /> */}
+        {/* {menuElectro} */}
         <WarmInfo />
         <GasInfo />
         {/* <WaterInfo data={dataWarm} /> */}
