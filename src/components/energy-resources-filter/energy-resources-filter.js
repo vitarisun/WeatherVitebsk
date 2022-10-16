@@ -65,8 +65,8 @@ class EnergyResourcesFilter extends Component {
   };
 
   onWarm = () => {
-    this.setState(({ gas }) => ({
-      gas: !gas,
+    this.setState(({ warm }) => ({
+      warm: !warm,
     }));
   };
 
@@ -101,18 +101,6 @@ class EnergyResourcesFilter extends Component {
   };
 
   render() {
-    // const { resources } = this.state;
-    // let menuEnergyResources = null;
-    // let menuElectroList = null;
-
-    // if (resources) {
-    //   menuEnergyResources = <EnergyResources />;
-    // }
-    // if (electro) {
-    //   // menuElectroList = <ElectricityList data={this.state.dataElectro} />;
-    //   menuElectroList = <ElectricityList />;
-    // }
-
     const buttonsEnergyResourcesFilter = [
       { name: 'Electro', label: 'Электоэнергия', click: this.onElectro },
       { name: 'Warm', label: 'Теплоэнергия', click: this.onWarm },

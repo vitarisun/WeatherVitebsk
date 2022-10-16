@@ -1,16 +1,24 @@
-.btn-group {
+.energy-resources {
+  padding: 10px;
   margin-top: 10px;
-
-  padding: 25px;
   background: linear-gradient(to top, #407ebe, #336598);
-
   border-radius: 25px;
   box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.15);
   color: #fff;
-  display: flex;
 }
 
-.btn {
+.btns {
+  margin-top: 10px;
   margin: 8px;
-  /* border-radius: 25px; */
+  color: #fff;
+  /* display: flex; */
+}
+
+/* .btn {
+  margin: 8px;
+
+} */
+
+.header {
+  text-align: center;
 }

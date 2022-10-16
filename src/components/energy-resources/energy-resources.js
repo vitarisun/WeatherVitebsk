@@ -12,8 +12,37 @@ class EnergyResources extends Component {
 
   render() {
     return (
-      <>
-        <div className="btn-group">
+      <div className="energy-resources">
+        <h5 className="header">Выберите подраздиление и отчетный период</h5>
+        <div>
+          <form className="add-form d-flex">
+            <select className="form-select">
+              <option defaultValue="0">Выберите подразделение</option>
+              <option value="1">ОГЭ</option>
+              <option value="2">МС Витебск</option>
+              <option value="3">МС Орша</option>
+            </select>
+            <label>Начало</label>
+            <input
+              type="date"
+              id="start-date"
+              className="form-control new-post-label"
+            ></input>
+
+            <label>Окончание</label>
+            <input
+              type="date"
+              id="end-date"
+              className="form-control new-post-label"
+            ></input>
+
+            <button type="submit" className="btn btn-outline-light">
+              Добавить
+            </button>
+          </form>
+        </div>
+        <h5 className="header">Выберите тип отчета</h5>
+        <div>
           <button className="btn btn-outline-light" type="button">
             Энергосбыт
           </button>
@@ -30,7 +59,7 @@ class EnergyResources extends Component {
             Для 12-ТЭК
           </button>
         </div>
-      </>
+      </div>
     );
   }
 }
