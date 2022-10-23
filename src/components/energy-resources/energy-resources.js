@@ -11,6 +11,26 @@ class EnergyResources extends Component {
   // }
 
   render() {
+    const buttonsEnergyResources = [
+      { name: 'EnergySales', label: 'Энергосбыт' },
+      { name: 'HeatingNetwork', label: 'Теплосети' },
+      { name: 'waterSewer', label: 'Водоканал' },
+      { name: 'for12TEK', label: 'Для 12-ТЭК' },
+    ];
+
+    const buttonsResources = buttonsEnergyResources.map(({ name, label }) => {
+      return (
+        <button
+          className="btn btn-outline-light"
+          type="button"
+          key={name}
+          // onClick={click}
+        >
+          {label}
+        </button>
+      );
+    });
+
     return (
       <div className="energy-resources">
         <h5 className="header">Выберите подраздиление и отчетный период</h5>
@@ -42,23 +62,7 @@ class EnergyResources extends Component {
           </form>
         </div>
         <h5 className="header">Выберите тип отчета</h5>
-        <div>
-          <button className="btn btn-outline-light" type="button">
-            Энергосбыт
-          </button>
-
-          <button className="btn btn-outline-light" type="button">
-            Теплосети
-          </button>
-
-          <button className="btn btn-outline-light" type="button">
-            Водоканал
-          </button>
-
-          <button className="btn btn-outline-light" type="button">
-            Для 12-ТЭК
-          </button>
-        </div>
+        <div className="btns">{buttonsResources}</div>
       </div>
     );
   }

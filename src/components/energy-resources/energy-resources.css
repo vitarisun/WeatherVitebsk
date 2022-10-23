@@ -11,14 +11,14 @@
   margin-top: 10px;
   margin: 8px;
   color: #fff;
-  /* display: flex; */
+  display: flex;
+  justify-content: center;
 }
 
 /* .btn {
   margin: 8px;
 
 } */
-
 .header {
   text-align: center;
 }
