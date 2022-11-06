@@ -57,7 +57,7 @@ class EnergyResources extends Component {
             ></input>
 
             <button type="submit" className="btn btn-outline-light">
-              Добавить
+              Выбрать
             </button>
           </form>
         </div>

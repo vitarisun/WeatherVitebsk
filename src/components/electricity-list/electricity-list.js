@@ -27,6 +27,7 @@ const ElectricityList = ({ data }) => {
                 <th>Тр-ры тока</th>
                 <th>Расчет. коэф.</th>
                 <th>Потребление, кВт/ч</th>
+                <th>Управление</th>
               </tr>
             </thead>
             {elemElectricity}

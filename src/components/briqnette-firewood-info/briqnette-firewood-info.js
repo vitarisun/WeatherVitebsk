@@ -17,7 +17,7 @@ const BriqnetteFirewoodInfo = () => {
           <tr>
             <th scope="row">1</th>
             <td>АМС Шарковщина</td>
-            <td>0.1</td> {/* Торфо-брикет */}
+            <td>0.1</td>
             <td>0.8</td>
           </tr>
         </tbody>
